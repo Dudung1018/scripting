@@ -1,0 +1,39 @@
+{
+  "localizedNames" : {
+    "ja" : "",
+    "en" : "",
+    "de" : "",
+    "it" : "",
+    "es" : "",
+    "ru" : "",
+    "pt" : "",
+    "zh" : "",
+    "fr" : ""
+  },
+  "runInApp" : false,
+  "description" : null,
+  "localizedDescriptions" : {
+    "ja" : "",
+    "en" : "",
+    "de" : "",
+    "it" : "",
+    "es" : "",
+    "ru" : "",
+    "pt" : "",
+    "zh" : "",
+    "fr" : ""
+  },
+  "name" : "机场余量",
+  "intentInputTypes" : [
+
+  ],
+  "iconImage" : null,
+  "color" : "rgba(252, 124, 93,1)",
+  "version" : "1.0.0",
+  "author" : null,
+  "contributors" : [
+
+  ],
+  "icon" : "airplane.departure",
+  "remoteResource" : null
+}
