@@ -23,7 +23,7 @@ class API {
     }
     async getUsage() {
         const info = await this.getDataInfo(this.url)
-        if (!info) return
+        if (!info) return null
 
         const resetDayLeft = this.getRemainingDays(this.reset_day)
 
