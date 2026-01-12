@@ -40,7 +40,7 @@ function SaveButton() {
                 if (!res) {
                     Dialog.alert({
                         title: "错误",
-                        message: "获取 Account ID 失败",
+                        message: "获取机场信息失败",
                     });
                 } else {
                     dismiss();
@@ -81,7 +81,7 @@ function UrlSec() {
 }
 
 function ResetDaySec() {
-    const v = useObservable(String(api.reset_day ?? ""));
+    const v = useObservable(String(api.reset_day ?? " 1"));
     useEffect(() => {
         api.reset_day = Number(v.value);
     }, [v.value]);

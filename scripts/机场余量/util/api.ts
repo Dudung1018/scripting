@@ -6,6 +6,7 @@ class API {
     url = ""
     reset_day = 1;
     method = "head";
+    ua = "Loon";
 
     constructor() {
         Object.assign(this, Storage.get(this.KEY));
@@ -13,8 +14,11 @@ class API {
 
     async save() {
         return Storage.set(this.KEY, {
+            title: this.title,
             url: this.url,
             reset_day: this.reset_day,
+            method: this.method,
+            ua: this.ua
         });
     }
     async getUsage() {
@@ -39,12 +43,12 @@ class API {
     }
 
     async getUserInfo(url: string) {
-        const method = this?.method || "HEAD"
+        const method = this.method
 
         const res = await fetch(url, {
             method,
             headers: {
-                "User-Agent": "Quantumult X",
+                "User-Agent": this.ua ,
             },
         })
 
