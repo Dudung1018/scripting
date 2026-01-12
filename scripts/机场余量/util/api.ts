@@ -48,7 +48,7 @@ class API {
         const res = await fetch(url, {
             method,
             headers: {
-                "User-Agent": this.ua ,
+                "User-Agent": this?.ua || "Loon" ,
             },
         })
 

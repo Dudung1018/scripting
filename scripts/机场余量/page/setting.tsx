@@ -59,6 +59,7 @@ function StackView() {
                 <UrlSec/>
                 <ResetDaySec/>
                 <MethodSec/>
+                <UaSec/>
             </Section>
         </List>
     );
@@ -94,4 +95,11 @@ function MethodSec() {
         api.method = v.value;
     }, [v.value]);
     return <TextField title={"Method"} value={v}/>;
+}
+function UaSec() {
+    const v = useObservable(api.ua);
+    useEffect(() => {
+        api.ua = v.value;
+    }, [v.value]);
+    return <TextField title={"UA"} value={v}/>;
 }
